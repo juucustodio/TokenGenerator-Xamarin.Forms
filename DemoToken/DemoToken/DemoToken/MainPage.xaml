@@ -4,11 +4,17 @@
              xmlns:local="clr-namespace:DemoToken"
              x:Class="DemoToken.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Padding="10">
+        <Label Text="{Binding Codigo}" 
+               FontSize="64" TextColor="Blue" 
+               HorizontalTextAlignment="Center" 
+               HorizontalOptions="CenterAndExpand"/>
+
+        <Label Text="{Binding Segundos}" 
+               FontSize="11" TextColor="Black" 
+               HorizontalTextAlignment="Center"  
+               HorizontalOptions="CenterAndExpand"/>
+
     </StackLayout>
 
 </ContentPage>
